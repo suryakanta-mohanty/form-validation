@@ -31,6 +31,7 @@ body{
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .box label{
@@ -42,6 +43,7 @@ body{
   content: '*';
   color: red;
   margin-left: 2px;
+  
 }
 
 .box input, .box textarea{
@@ -53,6 +55,17 @@ body{
   font-size: 14px;
 }
 
+.box span{
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 12px;
+  color: red;
+}
+
+.box span i{
+  color: seagreen;
+}
 
 .container form img{
   width: 25px;
@@ -85,4 +98,10 @@ body{
 
 .container form button:active{
   opacity: 75%;
+}
+
+#submit-error{
+  color: red;
+  margin: 20px 0 0;
+  display: block;
 }
